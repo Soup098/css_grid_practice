@@ -3,13 +3,17 @@ body{
     padding: 0;
 }
 .box-container{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
 }
 .box{
     border: 1px solid black;
-    width: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 8rem;*/
     height: 8rem;
+    grid-column: span 1;
+    
 }
